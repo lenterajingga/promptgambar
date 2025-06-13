@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generator Prompt Gambar untuk Copilot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generator Prompt Gambar untuk Copilot</h1>
+    <form id="promptForm">
+      <label for="subject">Subjek (apa yang ingin digambar):</label>
+      <input type="text" id="subject" required>
+
+      <label for="style">Gaya (misalnya: realistis, anime, 3D):</label>
+      <input type="text" id="style">
+
+      <label for="setting">Latar/Tempat (latar belakang, lingkungan):</label>
+      <input type="text" id="setting">
+
+      <label for="details">Detail Tambahan (pencahayaan, suasana, dll):</label>
+      <textarea id="details" rows="4"></textarea>
+
+      <button type="submit">Buat Prompt</button>
+    </form>
+
+    <h2>Prompt yang Dihasilkan:</h2>
+    <div id="outputPrompt" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
